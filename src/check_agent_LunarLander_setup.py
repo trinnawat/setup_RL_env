@@ -2,8 +2,11 @@ import gym
 
 
 env = gym.make('LunarLander-v2')
-env.reset()
-for _ in range(300):
+obs = env.reset()
+for _ in range(500):
     env.render()
-    env.step(env.action_space.sample())
+    action = env.action_space.sample()
+    obs, reward, done, info = env.step(action)
+    if done:
+        break
 env.close()
