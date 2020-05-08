@@ -6,3 +6,4 @@
 - pip install keras
 - pip install matplotlib pandas
 - pip install gym[box2d]==0.17.\* PyOpenGL==3.1.\* PyOpenGL-accelerate==3.1.\*
+- pip install gym[all] (work for some agent)
